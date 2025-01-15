@@ -1,0 +1,12 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+source leaprc.water.tip3p
+
+
+mol = loadpdb 1072_apo_p4a.pdb
+
+solvateOct mol TIP3PBOX 12.0 0.78
+addIonsRand mol Na+ 0
+savepdb mol 1072_apo_p4a_pdbtleap.pdb
+saveamberparm mol 1072_apo_p4a.prmtop 1072_apo_p4a.inpcrd
+quit

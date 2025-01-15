@@ -1,0 +1,9 @@
+ NVT MD production simulation, save every 10ps (weak coupling)
+&cntrl
+ imin=0, irest=1, ntx=5, iwrap=1,
+ nstlim=25000000, dt=0.002,
+ ntpr=500, ntwx=5000, ioutfm=1, ntwr=1000,
+ ntc=2, ntf=2, cut=8.0,
+ ntb=1, ntp=0,
+ ntt=1, tautp=10.0, temp0=298.0
+/
